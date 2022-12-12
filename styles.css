@@ -1,12 +1,19 @@
 body {
     margin: 0 auto;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
     background-color: hsl(0, 0%, 95%);
     color: hsla(0, 0%, 100%, 0.75);
     font-size: 15px;
+    position: relative;
+}
+
+.main {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
 }
 
 .card-container {
@@ -15,6 +22,8 @@ body {
     width: 60%;
     height: 60%;
     border-radius: .5em;
+    margin-bottom: auto;
+
 }
 
 .sedans {
@@ -89,6 +98,11 @@ input {
     cursor: pointer;
 }
 
+footer {
+    position: absolute;
+    bottom: 0;
+    align-self: center;
+}
 
 .attribution { font-size: 11px; text-align: center; color: black;}
 .attribution a { color: hsl(228, 45%, 44%); }
