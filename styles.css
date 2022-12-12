@@ -1,0 +1,117 @@
+body {
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 95%);
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+}
+
+.card-container {
+    display: flex;
+    margin: auto;
+    width: 60%;
+    height: 60%;
+    border-radius: .5em;
+}
+
+.sedans {
+    background-color: hsl(31, 77%, 52%);
+    padding: 3em;
+}
+
+.suvs {
+    background-color: hsl(184, 100%, 22%);
+    padding: 3em;
+
+}
+
+.lux {
+    background-color: hsl(179, 100%, 13%);
+    padding: 3em;
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    color: hsl(0, 0%, 95%);
+    font-size: 37px;
+}
+
+p {
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Lexend Deca', sans-serif;
+    font-family: 'Outfit', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15.5px;
+    line-height: 1.5em;
+}
+
+input {
+    border-radius: 10em;
+    height: 3em;
+    width: 10em;
+    border: none;
+    margin-top: 6em;
+    margin-bottom: 6em;
+}
+
+.sedans input{
+    color: hsl(31, 77%, 52%);
+}
+
+.sedans input:hover{
+    background-color: hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 95%);
+    border: 3px solid hsl(0, 0%, 95%);
+    cursor: pointer;
+}
+
+.suvs input{
+    color: hsl(184, 100%, 22%);
+}
+
+.suvs input:hover{
+    background-color: hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+    border: 3px solid hsl(0, 0%, 95%);
+    cursor: pointer;
+}
+
+.lux input{
+    color: hsl(179, 100%, 13%);
+}
+
+.lux input:hover{
+    background-color: hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 95%);
+    border: 3px solid hsl(0, 0%, 95%);
+    cursor: pointer;
+}
+
+
+.attribution { font-size: 11px; text-align: center; color: black;}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media screen and (max-width: 415px){
+    body {
+        height: 100%;
+    }
+
+    .card-container {
+        display: flex;
+        margin: auto;
+        border-radius: .5em;
+        overflow: hidden;
+        flex-direction: column;
+        width: 330px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    input {
+        margin-top: 1.5em;
+    }
+
+}
